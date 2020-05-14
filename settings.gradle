@@ -1,0 +1,2 @@
+rootProject.name='MDK Air 61'
+include ':app'
