@@ -2,6 +2,7 @@ package com.sahan.mdkair61;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -22,12 +23,25 @@ public class MainActivity extends AppCompatActivity {
 
         //Casting.
         Button btn = findViewById(R.id.btnClickMe);
+        Button btnHome = findViewById(R.id.btnOpenHome);
 
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "You clicked me!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Open HomeActivity
+                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(intent);
+
             }
         });
 
