@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEABB"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,10 +13,17 @@
         android:layout_height="wrap_content"
         android:text="Hello CSD61!"
         android:textSize="24sp"
-        android:textColor="#FF5722"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+       />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button android:id="@+id/btnClickMe"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Click Here"
+        android:background="#0A780F"
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
